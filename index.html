@@ -6,9 +6,13 @@
     <title>DigiPod</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
-    <body class="dark">
-        <div class="master">
+<scrollbar>
+    <body class="dark"  data-scrollbar>
+        <div class="viewport">
+        <div class="container">
+    <div class="master">
         <!-- Custom Cursor -->
         <div class="cursor">
             <i class="fa-solid fa-arrow-up-right"></i>
@@ -30,20 +34,18 @@
             <a class="schedule-btn" data-aos="slide-left" data-aos-delay="200">
                 Schedule A Call
             </a>
+            <div class="nav-menu-btn">
+                <i class="fa fa-bars"></i>
+            </div>
         </div>
         <!-- main -->
         <main>
-            <section class="hero">
+            <section class="hero" data-scroll-section-inview>
                 <div class="hero-content">
                     <h1 class="text-line-1" data-aos="fade-left" data-aos-delay="1000">YOUR GROWTH <br><span class="offset-text-line-1">STARTS</span>
                     </h1>
-                    <div class="bg-wrapper" data-aos="zoom-in" data-aos-delay="2000">
-                        <div class="video-bg">
-                    <video controls autoplay class="hero-background">
-                        <source src="./assets/media/mars.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
+                    <div class="pod">
+                        <img src="./assets/media/bubble.gif" alt="">
                     </div>
                     <h1 class="text-line-2" data-aos="fade-right" data-aos-delay="1200"  data-aos-anchor-placement="top">IN THIS POD</h1>
                 </div>
@@ -143,7 +145,10 @@
             </section>
         </main>
         </div>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        </div>
+        </div>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="./assets/js/script.js"></script>
     </body>
+    </scrollbar>
 </html>

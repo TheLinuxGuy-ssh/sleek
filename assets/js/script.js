@@ -2,7 +2,7 @@ AOS.init();
 const script = document.createElement("script");
 
 script.src = "https://kit.fontawesome.com/1ee8f271b9.js";
-
+document.addEventListener('contextmenu', event => event.preventDefault());
 document.body.appendChild(script);
 
 var mouseCursor = document.querySelector(".cursor");
@@ -51,3 +51,29 @@ work.forEach(link => {
         mouseCursor.classList.remove('hover-work')
     })
 });
+
+let scrollpos = window.scrollY
+
+const header = document.querySelector(".header")
+const pod = document.querySelector(".pod")
+const scrollChange = 1
+const globe = 350
+const add_class_on_scroll = () => header.classList.add("scrolled")
+const remove_class_on_scroll = () => header.classList.remove("scrolled")
+
+window.addEventListener('scroll', function() { 
+  scrollpos = window.scrollY;
+
+  if (scrollpos >= scrollChange) { add_class_on_scroll() }
+  else { remove_class_on_scroll() }
+  if(scrollpos >= globe) {
+    pod.classList.add("moved")
+  } else {
+    pod.classList.remove("moved")
+  }
+  
+})
+
+
+
+
