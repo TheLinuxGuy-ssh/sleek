@@ -10,7 +10,9 @@
     <body class="dark">
         <div class="master">
         <!-- Custom Cursor -->
-        <div class="cursor"></div>
+        <div class="cursor">
+            <i class="fa-solid fa-arrow-up-right"></i>
+        </div>
         <!-- header -->
         <div class="header">
             <div class="nav-logo" data-aos="fade-down" data-aos-delay="200">digipod</div>
@@ -37,7 +39,10 @@
                     </h1>
                     <div class="bg-wrapper" data-aos="zoom-in" data-aos-delay="2000">
                         <div class="video-bg">
-                    <video src="./assets/media/mars.mp4" class="hero-background" autoplay infinite></video>
+                    <video controls autoplay class="hero-background">
+                        <source src="./assets/media/mars.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
                     </div>
                     </div>
                     <h1 class="text-line-2" data-aos="fade-right" data-aos-delay="1200"  data-aos-anchor-placement="top">IN THIS POD</h1>
@@ -49,7 +54,7 @@
                             <span class="highlight">Future-oriented</span> and <span class="highlight">creative <br>solutions</span> to empower and assist<br>you in today's fast-paced world
                         </h1>
                         <div class="row">
-                            <div class="col" data-aos="fade-down" data-aos-delay="300">
+                            <div class="col" data-aos="zoom-in" data-aos-delay="300">
                                 <div class="service-card allow-hover">
                                     <h1 class="card-title">
                                         Design and <br>Digital Identity
@@ -65,7 +70,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col" data-aos="fade-down" data-aos-delay="400">
+                            <div class="col" data-aos="zoom-in" data-aos-delay="400">
                                 <div class="service-card allow-hover">
                                     <h1 class="card-title">
                                         Design and<br>Digital Identity
@@ -81,7 +86,7 @@
                                     </div>
                                 </div>
                                 </div>
-                                <div class="col" data-aos="fade-down" data-aos-delay="500">
+                                <div class="col" data-aos="zoom-in" data-aos-delay="500">
                                 <div class="service-card allow-hover">
                                     <h1 class="card-title">
                                         Design and <br>Digital Identity
@@ -99,6 +104,24 @@
                             </div>
                         </div>
                 </div>
+            </section>
+            <section class="works" data-aos="fade-up">
+                <h1 class="work-title" data-aos="fade-left">
+                    Some of <br>our works
+                </h1>
+                <a class="work-link" href="">
+                <div class="work-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="work-img">
+                        <img src="./assets/media/trial.webp" alt="">
+                    </div>
+                    <div class="work-content">
+                        <h2 class="work-item-title">Ella Initiative</h2>
+                        <span class="work-description">
+                            Development, Social Media
+                        </span>
+                    </div>
+                </div>
+                </a>
             </section>
         </main>
         </div>
