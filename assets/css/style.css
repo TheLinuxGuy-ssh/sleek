@@ -294,3 +294,21 @@ body.dark {
     margin-left: auto;
     text-align: right;
 }
+
+.more-work-btn:hover button{
+    transform: scale(1.05);
+}
+.more-work-btn button{
+    outline: 0;
+    border: 0;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    margin: 2vh 7vh;
+    padding: 2vh 4vh;
+    border-radius: 3vh;
+    transition: 0.2s transform;
+}
+.more-work-btn i {
+    margin: 0 1vh;
+}
