@@ -43,6 +43,9 @@ a {
     text-decoration: none;
     color: var(--text-color);
 }
+ul {
+    list-style: none;
+}
 body.dark {
     background-color: var(--main-bg);
     color: var(--text-color);
@@ -83,7 +86,7 @@ body.dark {
 /* header */
 .header {
     width: 100%;
-    padding: 3vh 0;
+    padding: 0;
     display: flex;
     position: fixed;
     z-index: 19;
@@ -101,22 +104,58 @@ body.dark {
 .nav-logo {
     font-size: 25px;
     letter-spacing: 2px;
-    margin: 0.5vh 8vh;
+    margin: 3.5vh 8vh;
     font-family: 'null';
 }
 .nav {
  list-style: none;
+ 
  margin-left: 30%;   
+}
+.nav-submenu {
+    position: fixed;
+    left: 50%;
+    background-color: #3333338e;
+    transform: translateX(-50%);
+    top: 13vh;
+    backdrop-filter: blur(10px);
+    border-radius: 4vh;
+    /* display: grid; */
+    display: grid;
+    visibility: hidden;
+    grid-template-columns: auto auto auto auto;
+    gap: 20vh;
+    color: #fff;
+    height: 0;
+    transition: 0.3s height, 0.5s opacity, 0.4s;
+    opacity: 0;
+}
+.service-sub:hover .nav-submenu {
+    visibility: visible;
+    height: 42vh;
+    opacity: 1;
+    backdrop-filter: blur(10px) !important;
+    
+}
+.header.scrolled .nav-submenu {
+    border-radius: 0;
+    border-radius: 4vh;
+    backdrop-filter: blur(10px);
 }
 .nav .nav-item {
     float: left;
-    padding: 1vh 2vh;
-    border-radius: 2vh;
-    margin: 0 1vh;   
+    padding: 4vh 2vh;
+    border-radius: 2vh; 
+    margin: 0 2vh;
+}
+.nav-link {
+    width: 100%;
+    height: 100%;
 }
 .schedule-btn {
     background-color: #fff;
     color: var(--contrast-text);
+    margin: 3vh 0;
     padding: 1vh 2vh;
     border-radius: 2vh;
     margin-left: auto;
