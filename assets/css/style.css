@@ -325,7 +325,7 @@ body.dark {
     font-size: 5vh;
 }
 .work-item {
-    padding: 3vh;
+    padding: 15vh;
 }
 .work-item:hover .work-img {
     transform: scale(0.98);
@@ -365,41 +365,6 @@ body.dark {
 .more-work-btn i {
     margin: 0 1vh;
 }
-@media screen and (max-width: 940px) {
-    .header.scrolled {
-        background-color: #333333d8;
-    }
-    .nav {
-        display: none;
-    }
-    .nav-item {
-       float: none !important;
-       font-size: 30px;
-       text-align: right; 
-    }
-    .schedule-btn {
-        display: none;
-    }
-    .nav-menu-btn {
-        display: block;
-    }
-    .nav-logo {
-        margin: 2vh 2vh;
-    }
-    .row {
-        display: block;
-    }
-    .pod {
-        display: none;
-    }
-    .service-card {
-        margin: 2vh -2vh;
-        width: 90%;
-    }
-    .text-line-1, .text-line-1 *, .text-line-2, .text-line-2 *{
-        font-size: 12vh;
-    }
-  }
 
 
 
@@ -487,4 +452,61 @@ body.dark {
   }
   .marquee:hover p{
     color: #fff;
+  }
+
+  @media screen and (max-width: 940px) {
+    .header.scrolled {
+        background-color: #333333d8;
+    }
+    .nav {
+        display: none;
+    }
+    .nav-item {
+       float: none !important;
+       font-size: 30px;
+       text-align: right; 
+    }
+    .schedule-btn {
+        display: none;
+    }
+    .nav-menu-btn {
+        display: block;
+    }
+    .nav-logo {
+        margin: 2vh 2vh;
+    }
+    .row {
+        display: block;
+    }
+    .pod {
+        display: none;
+    }
+    .service-card {
+        margin: 2vh -2vh;
+        width: 90%;
+    }
+    .text-line-1, .text-line-1 *, .text-line-2, .text-line-2 *{
+        font-size: 12vh;
+    }
+    .marquee div {
+        width: 250%;
+        height: 15vh;
+        animation: none;
+    }
+    .marquee span {
+        width: 85%;
+        font-size: 12.5vh;
+    }
+    .row-why-us {
+        grid-template-columns: 100%;
+    }
+    .bubbles {
+        gap: 2vh;
+    }
+    .bubbles img {
+        width: 75px;
+    }
+    .work-item {
+        padding: 3vh;
+    }
   }
