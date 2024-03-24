@@ -10,6 +10,7 @@ var navlinks = document.querySelectorAll('.header a');
 var link = document.querySelectorAll(".allow-hover");
 var body = document.querySelectorAll('body');
 var work = document.querySelectorAll('.work-link');
+var marquee = document.querySelectorAll(".marquee");
 
 window.addEventListener('mousemove' ,cursor);
 
@@ -49,6 +50,15 @@ work.forEach(link => {
     link.addEventListener('mouseout', nav => {
         mouseCursor.classList.remove('link-grow')
         mouseCursor.classList.remove('hover-work')
+    })
+});
+marquee.forEach(link => {
+    link.addEventListener('mouseover', nav => {
+        mouseCursor.classList.add('link-grow');
+
+    })
+    link.addEventListener('mouseout', nav => {
+        mouseCursor.classList.remove('link-grow')
     })
 });
 
