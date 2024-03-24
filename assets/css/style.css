@@ -429,3 +429,16 @@ body.dark {
   .marquee:hover p{
     color: #fff;
   }
+
+  .bubbles {
+    position: relative;
+    left: 50%;
+    transform: translateX(-30%);
+  }
+  .bubbles img {
+    width: 100px;
+    margin: 0 5vh;
+  }
+  .why *, .why{
+    font-family: 'TT-Firs';
+  }
