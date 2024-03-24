@@ -445,9 +445,7 @@ body.dark {
   }
 
   .bubbles {
-    position: relative;
-    left: 50%;
-    transform: translateX(-30%);
+   margin: 0 60vh;
   }
   .bubbles img {
     width: 100px;
@@ -455,4 +453,25 @@ body.dark {
   }
   .why *, .why{
     font-family: 'TT-Firs';
+  }
+
+  .bubbles {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5vh;
+
+  }
+  
+  
+  .bubbles div:nth-child(1){
+    transform: translateX(50%);
+  }
+  .bubbles div:nth-child(3){
+    transform: translateX(-50%);
+  }
+  .bubbles div:nth-child(7){
+    transform: translateX(50%);
+  }
+  .bubbles div:nth-child(9){
+    transform: translateX(-50%);
   }
