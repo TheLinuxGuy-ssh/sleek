@@ -402,6 +402,51 @@ body.dark {
   }
 
 
+
+  .bubbles {
+   margin: 0;
+  }
+  .bubbles img {
+    width: 100px;
+    margin: 0 5vh;
+  }
+  .why *, .why{
+    font-family: 'TT-Firs';
+    font-size: 5vh;
+  }
+  .why {
+    margin: 20vh 0;
+  }
+
+  .bubbles {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5vh;
+
+  }
+  
+  
+  .bubbles div:nth-child(1){
+    transform: translateX(50%);
+  }
+  .bubbles div:nth-child(3){
+    transform: translateX(-50%);
+  }
+  .bubbles div:nth-child(7){
+    transform: translateX(50%);
+  }
+  .bubbles div:nth-child(9){
+    transform: translateX(-50%);
+  }
+  .why-us {
+    margin-bottom: 40vh;
+    margin: 4vh;
+  }
+  .row-why-us {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2vh;
+  }
   .marquee {
     height: 25vh;
     width: 100%;
@@ -442,36 +487,4 @@ body.dark {
   }
   .marquee:hover p{
     color: #fff;
-  }
-
-  .bubbles {
-   margin: 0 60vh;
-  }
-  .bubbles img {
-    width: 100px;
-    margin: 0 5vh;
-  }
-  .why *, .why{
-    font-family: 'TT-Firs';
-  }
-
-  .bubbles {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 5vh;
-
-  }
-  
-  
-  .bubbles div:nth-child(1){
-    transform: translateX(50%);
-  }
-  .bubbles div:nth-child(3){
-    transform: translateX(-50%);
-  }
-  .bubbles div:nth-child(7){
-    transform: translateX(50%);
-  }
-  .bubbles div:nth-child(9){
-    transform: translateX(-50%);
   }
