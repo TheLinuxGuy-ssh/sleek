@@ -27,6 +27,12 @@ img {
     cursor: none;
     font-family: 'Roboto';
     -webkit-font-smoothing: antialiased;
+    -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
 }
 
 :root {
@@ -511,3 +517,62 @@ body.dark {
         padding: 3vh;
     }
   }
+.footer {
+    width: 90%;
+    height: 60vh;
+    margin: 2.5% 2.5%;
+    padding: 2.5%;
+    background-color: #3333338e;
+    border-radius: 4vh;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+.footer * {
+    font-family: 'TT-Firs';
+}
+.footer-logo {
+    font-family: 'Null';
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 6vh;
+    margin-bottom: 2vh;
+}
+.footer-content {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 15vh;
+}
+.footer-col {
+    
+    margin: 10vh 0;
+}
+.footer-col .footer-item {
+    margin: 2vh 0;
+    padding: 2vh 0;
+    text-align: center;
+    font-size: 3vh;
+}
+.footer-col .footer-item .footer-link {
+    color: #c5c5c5;
+    font-family: 'TT-Firs';
+    transition: 0.2s all;
+}
+.footer-col-title a {
+    font-weight: bold;
+    font-size: 3.5vh !important;
+    letter-spacing: 0.2vh;
+    color: #fff !important;
+}
+.footer-item:hover .footer-link {
+    color: #fff;
+}
+.footer-contact {
+    font-size: 3vh;
+}
+.footer-docs .footer-item {
+    float: left !important;
+    margin: 0 1vh;
+    padding: 1vh 1vh;
+    font-size: 2vh;
+}
