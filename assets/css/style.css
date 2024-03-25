@@ -57,6 +57,7 @@ ul {
 body.dark {
     background-color: var(--main-bg);
     color: var(--text-color);
+    overflow-x: hidden;
 }
 .master {
     overflow-x: hidden !important;
@@ -83,8 +84,8 @@ body.dark {
     -webkit-backdrop-filter: invert(1);
 }
 .link-grow{
-	width: 2rem;
-    height: 2rem;
+	width: 0.5rem;
+    height: 0.5rem;
     backdrop-filter: invert(1);
     -webkit-backdrop-filter: invert(1);
 }
@@ -541,7 +542,7 @@ body.dark {
 .footer-content {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    column-gap: 15vh;
+    column-gap: 1vh;
 }
 .footer-col {
     
@@ -551,7 +552,7 @@ body.dark {
     margin: 2vh 0;
     padding: 2vh 0;
     text-align: center;
-    font-size: 3vh;
+    font-size: 2vh;
 }
 .footer-col .footer-item .footer-link {
     color: #c5c5c5;
@@ -560,7 +561,7 @@ body.dark {
 }
 .footer-col-title a {
     font-weight: bold;
-    font-size: 3.5vh !important;
+    font-size: 2.5vh !important;
     letter-spacing: 0.2vh;
     color: #fff !important;
 }
@@ -575,4 +576,10 @@ body.dark {
     margin: 0 1vh;
     padding: 1vh 1vh;
     font-size: 2vh;
+}
+.footer-copyright{
+    position: absolute;
+    bottom: 0;
+    left: 7vh;
+    font-size: 2vh !important;
 }
