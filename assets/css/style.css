@@ -572,7 +572,7 @@ body.dark {
     font-size: 3vh;
 }
 .footer-docs .footer-item {
-    float: left !important;
+    float: right !important;
     margin: 0 1vh;
     padding: 1vh 1vh;
     font-size: 2vh;
