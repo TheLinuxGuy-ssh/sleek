@@ -201,9 +201,18 @@ body.dark {
     z-index: 2;
     transition: 2s all;
     overflow: visible;
+    animation: 5s bubble infinite;
 }
 .pod img {
     border-radius: 50%;
+}
+@keyframes bubble {
+    0%, 100% {
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        transform: translate(-50%, -45%)
+    }
 }
 .nav-menu-btn {
     padding: 2vh;
@@ -214,9 +223,10 @@ body.dark {
     border-radius: 1vh;
 }
 .pod.moved {
-    margin-top: 50vh;
-    margin-left: 20vh;
-    transform: scale(0.7);
+    transform: translate(-50%, -50%);
+    width: 40vh;
+    margin-top: 80vh;
+    margin-left: 50vh;
 }
 .hero-content *{
     font-family: var(--font-thunder-bold);
