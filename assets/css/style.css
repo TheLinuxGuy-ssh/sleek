@@ -199,7 +199,7 @@ body.dark {
     transform: translate(-50%, -50%);
     position: absolute;
     z-index: 2;
-    transition: 2s all;
+    transition: 1s all;
     overflow: visible;
     animation: 5s bubble infinite;
 }
